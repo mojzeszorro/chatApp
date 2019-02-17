@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -14,26 +15,28 @@
         
         <div class="container">
             <div class="chat-fixed-top"><strong>iChat</strong></div>
-            <div class="content-container col-lg-12">
+            <div class="content-container col-md-12">
                 <div class="row">
-                    <div id="chat-field">
-
+                    <div  id="chat-field">
+                    Chat field
                     </div>
-                    <div id="channel-list">
-
+                    <div  id="channel-list">
+                        <button id="expand" data-name="show">Expand</button>
                     </div>
                     </div>
-                    <div class="row align-items-end">
-                    <div class="col">
+                    <div class="row">
+                    
                         <form id="name" method="post" action="{{url_for('index')}}">
 
                             <input id="username" type="text" name="username" placeholder="Enter your username" required>
 
                         </form>
-                    </div>
+                    
                         </div>
+                        <div id="about" hidden>Find me on: ............<span id="logos">sfasf </span></div>
                 </div>
             </div>
+            
         </div>
         
 
