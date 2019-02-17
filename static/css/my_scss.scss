@@ -1,0 +1,222 @@
+﻿@import "bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+$bg-nav:rgba(0,123,255,0.7);
+$btn-color: transparent;
+$btn-color-hover:rgba(0,123,255,0.2);
+$btn-color-active: rgba(0,123,255,0.9);
+$jumbo-color:rgba(0,123,255,0.08);
+$jumbo-success: rgba(0, 255, 33,0.4);
+$jumbo-success-border: rgba(0,255,33,1);
+$jumbo-failure: rgba(255, 0, 0, 0.4);
+$jumbo-failure-border: rgba(255,0,0,1);
+
+
+#chat {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .container {
+        width: 600px;
+        height: 90%;
+        background: #7abcff; /* Old browsers */
+        background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 76%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 76%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        position: absolute;
+        margin: auto;
+        top: 2rem;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-container {
+        width: 95%;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    label {
+        color: $bg-nav;
+        text-transform: uppercase;
+    }
+}
+
+    #container-login input {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+        background: none;
+        color: $bg-nav;
+        border: none;
+        border-bottom: 1px solid $bg-nav;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .about {
+        text-decoration: none;
+        color: $bg-nav;
+        transition: all ease-in 0.5s;
+
+        &:hover {
+            text-decoration: double;
+        }
+    }
+
+
+
+    #chat .submit {
+        width: 100%;
+        height: 30px;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.2em;
+        color: $bg-nav;
+        background-color: #ECF0F1;
+        transition: background 1s, color 1s;
+
+
+        &:hover {
+            background: $bg-nav;
+            color: #ECF0F1;
+            cursor: pointer;
+        }
+    }
+
+    #chat button {
+        &:focus {
+            outline: none;
+        }
+    }
+
+   
+
+
+
+    #wrapper {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+
+    #carousel {
+        width: 100%;
+        overflow: hidden;
+
+        a img {
+            display: block;
+            float: left;
+        }
+    }
+
+    table {
+        background-color: #F4F7FB;
+
+        thead {
+            th {
+                border-bottom: 2px solid $bg-nav !important;
+                border-top: none !important;
+            }
+        }
+
+        tr {
+
+
+            &:hover {
+                background-color: rgba(0, 123, 255, 0.08) !important;
+            }
+        }
+
+        td {
+            border-top: 1px dotted $bg-nav !important;
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .login-small {
+        width: auto !important;
+        background-color: #ECF0F1;
+        transition: background 1s, color 1s;
+
+        a {
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.2em;
+            color: $bg-nav;
+            transition: background 1s, color 1s;
+
+
+            &:hover {
+                color: #ECF0F1;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            background: $bg-nav;
+            color: #ECF0F1;
+        }
+    }
+
+    .alert, .alert-warning {
+        text-align: center !important;
+        margin-top: 5px;
+    }
+
+    .btn-secondary {
+        &:disabled {
+            background-color: $btn-color;
+            border-color: $btn-color;
+        }
+    }
+body {
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 76%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 76%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-family: 'Raleway',sans-serif !important;
+}
+.chat-fixed-top {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(162,162,167,0.7), rgba(162,162,167,0.9));
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgb(142,142,147);
+   text-align:center;
+}
+input #username{
+    position:absolute;
+    bottom:0;
+}
