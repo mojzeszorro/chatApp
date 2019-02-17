@@ -14,11 +14,11 @@
     <div id="chat">
         
         <div class="container">
-            <div class="chat-fixed-top"><strong>iChat</strong></div>
+            <div class="chat-fixed-top" id="chat-title"><strong>iChat</strong></div>
             <div class="content-container col-md-12">
                 <div class="row">
                     <div  id="chat-field">
-                    Chat field
+                    <ul id="messages"></ul>
                     </div>
                     <div  id="channel-list">
                         <button id="expand" data-name="show">Expand</button>
@@ -29,6 +29,9 @@
                         <form id="name" method="post" action="{{url_for('index')}}">
 
                             <input id="username" type="text" name="username" placeholder="Enter your username" required>
+                            <input type="submit">
+                            <input id="message" type="text" name="message" placeholder="Enter your message" hidden>
+                            
 
                         </form>
                     
